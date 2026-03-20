@@ -11,7 +11,7 @@
 
   <meta name="author" content="Karen Hovhannisyan">
   <meta name="dcterms.date" content="2026-03-20">
-  <title>Data Vision – A Data Vision for Ardshinbank</title>
+  <title>Data Vision</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,73 +29,8 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-423d414d36ce366a9d05f36d06304417.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -189,105 +124,14 @@
       margin-right: 0; 
     }
   </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    :root {
-      --bg: #f4efe7;
-      --paper: #fffaf2;
-      --ink: #14213d;
-      --accent: #a52a2a;
-      --accent-2: #c97a2b;
-      --muted: #5b6475;
-      --line: #d8cdbf;
-      --ok: #2d6a4f;
-    }
-    .reveal {
-      font-family: 'Manrope', sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at top left, rgba(201, 122, 43, 0.18), transparent 24%),
-        radial-gradient(circle at bottom right, rgba(165, 42, 42, 0.10), transparent 28%),
-        linear-gradient(135deg, #f8f2e8 0%, #f4efe7 45%, #efe6d7 100%);
-    }
-    .reveal .slides section {
-      text-align: left;
-      padding: 0.2em 0.8em;
-    }
-    .reveal h1, .reveal h2, .reveal h3 {
-      color: var(--ink);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      text-transform: none;
-    }
-    .reveal h1 { font-size: 2.5em; }
-    .reveal h2 { font-size: 1.8em; margin-bottom: 0.4em; }
-    .reveal h3 { font-size: 1.15em; margin-bottom: 0.3em; }
-    .reveal p, .reveal li { font-size: 0.9em; line-height: 1.45; }
-    .reveal strong { color: var(--accent); }
-    .reveal .muted { color: var(--muted); }
-    .reveal .mono {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.84em;
-    }
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      align-items: start;
-    }
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-    .card {
-      background: rgba(255, 250, 242, 0.92);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 20px 22px;
-      box-shadow: 0 16px 40px rgba(20, 33, 61, 0.08);
-    }
-    .metric {
-      font-size: 2.2em;
-      font-weight: 800;
-      color: var(--accent);
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-    .pill {
-      display: inline-block;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: rgba(165, 42, 42, 0.08);
-      border: 1px solid rgba(165, 42, 42, 0.18);
-      color: var(--accent);
-      font-size: 0.65em;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-    }
-    .icon-xl { font-size: 60px; }
-    .icon-lg { font-size: 42px; }
-    .accent { color: var(--accent); }
-    .ok { color: var(--ok); }
-    .tight ul { margin-top: 0.2em; }
-    .tiny { font-size: 0.62em; }
-    .quote {
-      font-size: 1.15em;
-      line-height: 1.35;
-      font-weight: 700;
-      max-width: 1100px;
-    }
-    .footer-note {
-      position: absolute;
-      bottom: 24px;
-      right: 24px;
-      font-size: 0.55em;
-      color: var(--muted);
-    }
+    .icon-xxl { font-size: 84px; }
+    .icon-xl  { font-size: 64px; }
+    .icon-lg  { font-size: 48px; }
+    .muted { opacity: .8 }
+    .pill { border-radius: 10px; }
+    .circle { border-radius: 50%; }
   </style>
 </head>
 <body class="quarto-light">
@@ -295,8 +139,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">A Data Vision for Ardshinbank</h1>
-  <p class="subtitle">Chief Data Officer Candidate Presentation</p>
+  <h1 class="title">Data Vision</h1>
+  <p class="subtitle">Value Driven Proposal</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -308,309 +152,16 @@ Karen Hovhannisyan
 
   <p class="date">2026-03-20</p>
 </section>
-<section id="the-mandate" class="slide level2">
-<h2>The Mandate</h2>
-<div class="grid-2">
-<div class="card">
-<p><span class="pill">Context</span></p>
-<section id="turn-data-into-a-controlled-trusted-monetizable-bank-asset" class="title-slide slide level1 center">
-<h1>Turn data into a controlled, trusted, monetizable bank asset</h1>
-<p>Ardshinbank is hiring a CDO to build <strong>one integrated data function</strong> across:</p>
-<ul>
-<li><strong>Data Governance</strong></li>
-<li><strong>Analytics and BI</strong></li>
-<li><strong>Data Science and AI</strong></li>
-<li><strong>Enterprise data platform</strong>: DWH + Data Lake</li>
-</ul>
-</section>
-
-</div>
-<div class="card">
-<div class="quote">
-<p>My vision is not to build another reporting team. It is to create a <span class="accent">bank-wide data operating system</span> that improves decisions, strengthens control, and accelerates digital growth.</p>
-</div>
-<div class="footer-note">
-Based on Ardshinbank CDO job description
-</div>
-</div>
-</div>
-</section>
-<section id="why-this-role-matters-now" class="slide level2">
-<h2>Why This Role Matters Now</h2>
-<div class="grid-3">
-<div class="card">
-<div class="icon-lg accent">
-<i class="fa-solid fa-shield-halved"></i>
-</div>
-<h3 id="regulatory-confidence">Regulatory confidence</h3>
-<p>Data ownership, lineage, quality, and access controls must be explicit and auditable.</p>
-</div>
-<div class="card">
-<div class="icon-lg accent">
-<i class="fa-solid fa-building-columns"></i>
-</div>
-<h3 id="banking-complexity">Banking complexity</h3>
-<p>Core banking, digital channels, risk, finance, and CRM need one common information backbone.</p>
-</div>
-<div class="card">
-<div class="icon-lg accent">
-<i class="fa-solid fa-bolt"></i>
-</div>
-<h3 id="ai-readiness">AI readiness</h3>
-<p>AI without governed, reusable, high-quality data creates risk faster than value.</p>
-</div>
-</div>
-</section>
-<section id="my-north-star" class="slide level2">
-<h2>My North Star</h2>
-<div class="grid-3">
-<div class="card">
-<div class="metric">
-1
-</div>
-<h3 id="trusted-data">Trusted data</h3>
-<p>A governed source of truth for customers, products, transactions, and risk.</p>
-</div>
-<div class="card">
-<div class="metric">
-2
-</div>
-<h3 id="faster-decisions">Faster decisions</h3>
-<p>Self-service analytics for executives and business units with stable KPI definitions.</p>
-</div>
-<div class="card">
-<div class="metric">
-3
-</div>
-<h3 id="scalable-innovation">Scalable innovation</h3>
-<p>A production-grade path from BI to advanced analytics to AI deployment.</p>
-</div>
-</div>
-</section>
-<section id="what-i-would-build" class="slide level2">
-<h2>What I Would Build</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>flowchart LR</span>
-<span id="cb1-2"><a></a>    A[Source Systems\nCore Banking, CRM, Digital, Risk, Finance] --&gt; B[Data Integration Layer]</span>
-<span id="cb1-3"><a></a>    B --&gt; C[Enterprise Data Lake]</span>
-<span id="cb1-4"><a></a>    B --&gt; D[Curated Data Warehouse]</span>
-<span id="cb1-5"><a></a>    C --&gt; E[Data Science Sandbox]</span>
-<span id="cb1-6"><a></a>    D --&gt; F[Regulatory and Management Reporting]</span>
-<span id="cb1-7"><a></a>    D --&gt; G[Self-Service BI and KPI Layer]</span>
-<span id="cb1-8"><a></a>    C --&gt; H[ML and AI Feature Store]</span>
-<span id="cb1-9"><a></a>    E --&gt; I[Model Validation and MLOps]</span>
-<span id="cb1-10"><a></a>    H --&gt; I</span>
-<span id="cb1-11"><a></a>    I --&gt; J[Production Use Cases\nScoring, Next Best Offer, Fraud, Churn]</span>
-<span id="cb1-12"><a></a>    K[Governance, Metadata, Quality, Security] --- B</span>
-<span id="cb1-13"><a></a>    K --- C</span>
-<span id="cb1-14"><a></a>    K --- D</span>
-<span id="cb1-15"><a></a>    K --- I</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="operating-model" class="slide level2">
-<h2>Operating Model</h2>
-<div class="grid-2">
-<section id="central-data-office" class="card tight">
-<h3>Central data office</h3>
-<ul>
-<li>Enterprise architecture for data</li>
-<li>Governance, standards, controls</li>
-<li>Shared data engineering platform</li>
-<li>Common semantic layer and KPI catalog</li>
-<li>Data science governance and MLOps</li>
-</ul>
-</section>
-<section id="federated-business-ownership" class="card tight">
-<h3>Federated business ownership</h3>
-<ul>
-<li>Business data owners by domain</li>
-<li>Embedded analysts close to decisions</li>
-<li>Prioritization with business and IT</li>
-<li>Shared accountability for quality and adoption</li>
-<li>Clear stewardship model</li>
-</ul>
-</section>
-</div>
-</section>
-<section id="governance-first-not-governance-heavy" class="slide level2">
-<h2>Governance First, Not Governance Heavy</h2>
-<div class="grid-3">
-<section id="ownership" class="card">
-<h3>Ownership</h3>
-<p>Assign accountable data owners and stewards for critical domains.</p>
-</section>
-<section id="quality" class="card">
-<h3>Quality</h3>
-<p>Define controls, thresholds, issue workflows, and remediation cycles.</p>
-</section>
-<section id="access" class="card">
-<h3>Access</h3>
-<p>Implement role-based access, confidentiality rules, and traceability.</p>
-</section>
-</div>
-<section id="governance-principle" class="card">
-<h3>Governance principle</h3>
-<p><strong>Minimum viable control, maximum practical adoption.</strong></p>
-<p>Policies only matter when they are embedded in platforms, workflows, and delivery teams.</p>
-</section>
-</section>
-<section id="kpi-architecture" class="slide level2">
-<h2>KPI Architecture</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a></a>flowchart TD</span>
-<span id="cb2-2"><a></a>    A[Business Objectives] --&gt; B[Executive KPI Tree]</span>
-<span id="cb2-3"><a></a>    B --&gt; C[Standard Metric Definitions]</span>
-<span id="cb2-4"><a></a>    C --&gt; D[Certified Data Products]</span>
-<span id="cb2-5"><a></a>    D --&gt; E[Dashboards and Alerts]</span>
-<span id="cb2-6"><a></a>    D --&gt; F[Ad hoc Exploration]</span>
-<span id="cb2-7"><a></a>    C --&gt; G[Regulatory Reporting]</span>
-<span id="cb2-8"><a></a>    H[Data Quality Rules] --&gt; D</span>
-<span id="cb2-9"><a></a>    I[Metadata and Lineage] --&gt; C</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="first-90-days" class="slide level2">
-<h2>First 90 Days</h2>
-<div class="grid-3">
-<div class="card">
-<div class="pill">
-0-30 days
-</div>
-<h3 id="assess">Assess</h3>
-<p>Map systems, stakeholders, data pain points, and critical reporting flows.</p>
-</div>
-<div class="card">
-<div class="pill">
-31-60 days
-</div>
-<h3 id="stabilize">Stabilize</h3>
-<p>Launch governance council, define target architecture, identify priority use cases.</p>
-</div>
-<div class="card">
-<div class="pill">
-61-90 days
-</div>
-<h3 id="deliver">Deliver</h3>
-<p>Start lighthouse initiatives with measurable business outcomes and visible executive sponsorship.</p>
-</div>
-</div>
-</section>
-<section id="priority-deliverables-in-year-1" class="slide level2">
-<h2>Priority Deliverables In Year 1</h2>
-<div class="grid-2">
-<section id="foundation" class="card tight">
-<h3>Foundation</h3>
-<ul>
-<li>Enterprise data model for critical banking domains</li>
-<li>Data catalog, glossary, and ownership matrix</li>
-<li>DWH and lake architecture roadmap</li>
-<li>Initial quality scorecards for top-priority datasets</li>
-<li>Access control model aligned with security and compliance</li>
-</ul>
-</section>
-<section id="business-value" class="card tight">
-<h3>Business value</h3>
-<ul>
-<li>Executive KPI layer with certified definitions</li>
-<li>Standard reporting packs for management and regulators</li>
-<li>Customer 360 and segmentation foundation</li>
-<li>First ML use cases with controlled deployment</li>
-<li>Adoption model for self-service analytics</li>
-</ul>
-</section>
-</div>
-</section>
-<section id="use-cases-i-would-prioritize" class="slide level2">
-<h2>Use Cases I Would Prioritize</h2>
-<div class="grid-2">
-<section id="value-creation" class="card tight">
-<h3>Value creation</h3>
-<ul>
-<li>Next best product offer</li>
-<li>Customer churn prediction</li>
-<li>Branch and channel performance optimization</li>
-<li>Marketing attribution and segment profitability</li>
-</ul>
-</section>
-<section id="risk-and-control" class="card tight">
-<h3>Risk and control</h3>
-<ul>
-<li>Fraud detection enhancement</li>
-<li>Early warning indicators</li>
-<li>Credit analytics acceleration</li>
-<li>Data quality monitoring for regulatory submissions</li>
-</ul>
-</section>
-</div>
-</section>
-<section id="team-design" class="slide level2">
-<h2>Team Design</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a></a>flowchart TB</span>
-<span id="cb3-2"><a></a>    A[Chief Data Officer] --&gt; B[Data Governance Lead]</span>
-<span id="cb3-3"><a></a>    A --&gt; C[Head of Data Engineering]</span>
-<span id="cb3-4"><a></a>    A --&gt; D[Head of Analytics and BI]</span>
-<span id="cb3-5"><a></a>    A --&gt; E[Lead Data Scientist]</span>
-<span id="cb3-6"><a></a>    B --&gt; F[Data Stewards]</span>
-<span id="cb3-7"><a></a>    C --&gt; G[Data Engineers]</span>
-<span id="cb3-8"><a></a>    D --&gt; H[BI Developers and Analysts]</span>
-<span id="cb3-9"><a></a>    E --&gt; I[ML Engineers and Data Scientists]</span>
-<span id="cb3-10"><a></a>    J[Business Data Owners] --- B</span>
-<span id="cb3-11"><a></a>    J --- D</span>
-<span id="cb3-12"><a></a>    K[Enterprise Architecture and InfoSec] --- A</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="how-i-would-lead" class="slide level2">
-<h2>How I Would Lead</h2>
-<div class="grid-3">
-<section id="business-first" class="card">
-<h3>Business-first</h3>
-<p>Start from decisions, controls, and measurable outcomes rather than tools.</p>
-</section>
-<section id="platform-mindset" class="card">
-<h3>Platform mindset</h3>
-<p>Build reusable data products and shared services, not one-off requests.</p>
-</section>
-<section id="execution-discipline" class="card">
-<h3>Execution discipline</h3>
-<p>Set roadmaps, operating cadences, ownership, and delivery metrics.</p>
-</section>
-</div>
-</section>
-<section id="success-metrics" class="slide level2">
-<h2>Success Metrics</h2>
-<div class="grid-3">
-<section id="trust" class="card">
-<h3>Trust</h3>
-<p>Improvement in critical data quality scores and fewer reporting disputes.</p>
-</section>
-<section id="speed" class="card">
-<h3>Speed</h3>
-<p>Shorter turnaround from data request to management insight.</p>
-</section>
-<section id="impact" class="card">
-<h3>Impact</h3>
-<p>Use cases moved into production and linked to commercial or risk outcomes.</p>
-</section>
-</div>
-</section>
-<section id="closing" class="slide level2">
-<h2>Closing</h2>
-<div class="grid-2">
-<section id="my-proposition-for-ardshinbank" class="card">
-<h3>My proposition for Ardshinbank</h3>
-<ul>
-<li>Establish a credible, modern data function</li>
-<li>Balance governance with delivery speed</li>
-<li>Build a scalable platform for BI, analytics, and AI</li>
-<li>Make data a competitive capability, not just an IT service</li>
-</ul>
-</section>
-<div class="card">
-<div class="quote">
-<p>If selected, I would focus on one outcome above all: <span class="accent">a data function the bank can trust, use, and scale.</span></p>
-</div>
-<p class="mono muted">
-Karen Hovhannisyan
-</p>
-</div>
-</div>
-
+<section>
+<section id="hello" class="title-slide slide level1 center">
+<h1>Hello</h1>
 
 </section>
+<section id="test" class="slide level2">
+<h2>Test</h2>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="img/favicon.png" class="slide-logo"></p>
@@ -641,7 +192,7 @@ Karen Hovhannisyan
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-'controlsAuto': false,
+'controlsAuto': true,
 'previewLinksAuto': true,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
@@ -653,7 +204,7 @@ Karen Hovhannisyan
 'smaller': false,
  
         // Display controls in the bottom right corner
-        controls: true,
+        controls: false,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
