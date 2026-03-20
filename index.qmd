@@ -1,0 +1,420 @@
+---
+title: "A Data Vision for Ardshinbank"
+subtitle: "Chief Data Officer Candidate Presentation"
+author: "Karen Hovhannisyan"
+date: last-modified
+format:
+  revealjs:
+    touch: true
+    slide-number: false
+    chalkboard: true
+    preview-links: auto
+    width: 1500
+    transition: slide
+    logo: "img/favicon.png"
+    theme: simple
+    incremental: false
+    controls: true
+    center: false
+    smaller: false
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+          <style>
+            :root {
+              --bg: #f4efe7;
+              --paper: #fffaf2;
+              --ink: #14213d;
+              --accent: #a52a2a;
+              --accent-2: #c97a2b;
+              --muted: #5b6475;
+              --line: #d8cdbf;
+              --ok: #2d6a4f;
+            }
+            .reveal {
+              font-family: 'Manrope', sans-serif;
+              color: var(--ink);
+              background:
+                radial-gradient(circle at top left, rgba(201, 122, 43, 0.18), transparent 24%),
+                radial-gradient(circle at bottom right, rgba(165, 42, 42, 0.10), transparent 28%),
+                linear-gradient(135deg, #f8f2e8 0%, #f4efe7 45%, #efe6d7 100%);
+            }
+            .reveal .slides section {
+              text-align: left;
+              padding: 0.2em 0.8em;
+            }
+            .reveal h1, .reveal h2, .reveal h3 {
+              color: var(--ink);
+              font-weight: 800;
+              letter-spacing: -0.03em;
+              text-transform: none;
+            }
+            .reveal h1 { font-size: 2.5em; }
+            .reveal h2 { font-size: 1.8em; margin-bottom: 0.4em; }
+            .reveal h3 { font-size: 1.15em; margin-bottom: 0.3em; }
+            .reveal p, .reveal li { font-size: 0.9em; line-height: 1.45; }
+            .reveal strong { color: var(--accent); }
+            .reveal .muted { color: var(--muted); }
+            .reveal .mono {
+              font-family: 'IBM Plex Mono', monospace;
+              font-size: 0.84em;
+            }
+            .grid-2 {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 24px;
+              align-items: start;
+            }
+            .grid-3 {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 20px;
+            }
+            .card {
+              background: rgba(255, 250, 242, 0.92);
+              border: 1px solid var(--line);
+              border-radius: 18px;
+              padding: 20px 22px;
+              box-shadow: 0 16px 40px rgba(20, 33, 61, 0.08);
+            }
+            .metric {
+              font-size: 2.2em;
+              font-weight: 800;
+              color: var(--accent);
+              line-height: 1;
+              margin-bottom: 8px;
+            }
+            .pill {
+              display: inline-block;
+              padding: 6px 12px;
+              border-radius: 999px;
+              background: rgba(165, 42, 42, 0.08);
+              border: 1px solid rgba(165, 42, 42, 0.18);
+              color: var(--accent);
+              font-size: 0.65em;
+              font-weight: 700;
+              letter-spacing: 0.02em;
+              text-transform: uppercase;
+            }
+            .icon-xl { font-size: 60px; }
+            .icon-lg { font-size: 42px; }
+            .accent { color: var(--accent); }
+            .ok { color: var(--ok); }
+            .tight ul { margin-top: 0.2em; }
+            .tiny { font-size: 0.62em; }
+            .quote {
+              font-size: 1.15em;
+              line-height: 1.35;
+              font-weight: 700;
+              max-width: 1100px;
+            }
+            .footer-note {
+              position: absolute;
+              bottom: 24px;
+              right: 24px;
+              font-size: 0.55em;
+              color: var(--muted);
+            }
+          </style>
+editor: visual
+---
+
+## The Mandate
+
+::: {.grid-2}
+::: {.card}
+<span class="pill">Context</span>
+
+# Turn data into a controlled, trusted, monetizable bank asset
+
+Ardshinbank is hiring a CDO to build **one integrated data function** across:
+
+- **Data Governance**
+- **Analytics and BI**
+- **Data Science and AI**
+- **Enterprise data platform**: DWH + Data Lake
+:::
+
+::: {.card}
+<div class="quote">
+My vision is not to build another reporting team. It is to create a <span class="accent">bank-wide data operating system</span> that improves decisions, strengthens control, and accelerates digital growth.
+</div>
+
+<div class="footer-note">Based on Ardshinbank CDO job description</div>
+:::
+:::
+
+## Why This Role Matters Now
+
+::: {.grid-3}
+::: {.card}
+<div class="icon-lg accent"><i class="fa-solid fa-shield-halved"></i></div>
+### Regulatory confidence
+Data ownership, lineage, quality, and access controls must be explicit and auditable.
+:::
+
+::: {.card}
+<div class="icon-lg accent"><i class="fa-solid fa-building-columns"></i></div>
+### Banking complexity
+Core banking, digital channels, risk, finance, and CRM need one common information backbone.
+:::
+
+::: {.card}
+<div class="icon-lg accent"><i class="fa-solid fa-bolt"></i></div>
+### AI readiness
+AI without governed, reusable, high-quality data creates risk faster than value.
+:::
+:::
+
+## My North Star
+
+::: {.grid-3}
+::: {.card}
+<div class="metric">1</div>
+### Trusted data
+A governed source of truth for customers, products, transactions, and risk.
+:::
+
+::: {.card}
+<div class="metric">2</div>
+### Faster decisions
+Self-service analytics for executives and business units with stable KPI definitions.
+:::
+
+::: {.card}
+<div class="metric">3</div>
+### Scalable innovation
+A production-grade path from BI to advanced analytics to AI deployment.
+:::
+:::
+
+## What I Would Build
+
+```mermaid
+flowchart LR
+    A[Source Systems\nCore Banking, CRM, Digital, Risk, Finance] --> B[Data Integration Layer]
+    B --> C[Enterprise Data Lake]
+    B --> D[Curated Data Warehouse]
+    C --> E[Data Science Sandbox]
+    D --> F[Regulatory and Management Reporting]
+    D --> G[Self-Service BI and KPI Layer]
+    C --> H[ML and AI Feature Store]
+    E --> I[Model Validation and MLOps]
+    H --> I
+    I --> J[Production Use Cases\nScoring, Next Best Offer, Fraud, Churn]
+    K[Governance, Metadata, Quality, Security] --- B
+    K --- C
+    K --- D
+    K --- I
+```
+
+## Operating Model
+
+::: {.grid-2}
+::: {.card .tight}
+### Central data office
+
+- Enterprise architecture for data
+- Governance, standards, controls
+- Shared data engineering platform
+- Common semantic layer and KPI catalog
+- Data science governance and MLOps
+:::
+
+::: {.card .tight}
+### Federated business ownership
+
+- Business data owners by domain
+- Embedded analysts close to decisions
+- Prioritization with business and IT
+- Shared accountability for quality and adoption
+- Clear stewardship model
+:::
+:::
+
+## Governance First, Not Governance Heavy
+
+::: {.grid-3}
+::: {.card}
+### Ownership
+Assign accountable data owners and stewards for critical domains.
+:::
+
+::: {.card}
+### Quality
+Define controls, thresholds, issue workflows, and remediation cycles.
+:::
+
+::: {.card}
+### Access
+Implement role-based access, confidentiality rules, and traceability.
+:::
+:::
+
+::: {.card}
+### Governance principle
+**Minimum viable control, maximum practical adoption.**
+
+Policies only matter when they are embedded in platforms, workflows, and delivery teams.
+:::
+
+## KPI Architecture
+
+```mermaid
+flowchart TD
+    A[Business Objectives] --> B[Executive KPI Tree]
+    B --> C[Standard Metric Definitions]
+    C --> D[Certified Data Products]
+    D --> E[Dashboards and Alerts]
+    D --> F[Ad hoc Exploration]
+    C --> G[Regulatory Reporting]
+    H[Data Quality Rules] --> D
+    I[Metadata and Lineage] --> C
+```
+
+## First 90 Days
+
+::: {.grid-3}
+::: {.card}
+<div class="pill">0-30 days</div>
+### Assess
+Map systems, stakeholders, data pain points, and critical reporting flows.
+:::
+
+::: {.card}
+<div class="pill">31-60 days</div>
+### Stabilize
+Launch governance council, define target architecture, identify priority use cases.
+:::
+
+::: {.card}
+<div class="pill">61-90 days</div>
+### Deliver
+Start lighthouse initiatives with measurable business outcomes and visible executive sponsorship.
+:::
+:::
+
+## Priority Deliverables In Year 1
+
+::: {.grid-2}
+::: {.card .tight}
+### Foundation
+
+- Enterprise data model for critical banking domains
+- Data catalog, glossary, and ownership matrix
+- DWH and lake architecture roadmap
+- Initial quality scorecards for top-priority datasets
+- Access control model aligned with security and compliance
+:::
+
+::: {.card .tight}
+### Business value
+
+- Executive KPI layer with certified definitions
+- Standard reporting packs for management and regulators
+- Customer 360 and segmentation foundation
+- First ML use cases with controlled deployment
+- Adoption model for self-service analytics
+:::
+:::
+
+## Use Cases I Would Prioritize
+
+::: {.grid-2}
+::: {.card .tight}
+### Value creation
+
+- Next best product offer
+- Customer churn prediction
+- Branch and channel performance optimization
+- Marketing attribution and segment profitability
+:::
+
+::: {.card .tight}
+### Risk and control
+
+- Fraud detection enhancement
+- Early warning indicators
+- Credit analytics acceleration
+- Data quality monitoring for regulatory submissions
+:::
+:::
+
+## Team Design
+
+```mermaid
+flowchart TB
+    A[Chief Data Officer] --> B[Data Governance Lead]
+    A --> C[Head of Data Engineering]
+    A --> D[Head of Analytics and BI]
+    A --> E[Lead Data Scientist]
+    B --> F[Data Stewards]
+    C --> G[Data Engineers]
+    D --> H[BI Developers and Analysts]
+    E --> I[ML Engineers and Data Scientists]
+    J[Business Data Owners] --- B
+    J --- D
+    K[Enterprise Architecture and InfoSec] --- A
+```
+
+## How I Would Lead
+
+::: {.grid-3}
+::: {.card}
+### Business-first
+Start from decisions, controls, and measurable outcomes rather than tools.
+:::
+
+::: {.card}
+### Platform mindset
+Build reusable data products and shared services, not one-off requests.
+:::
+
+::: {.card}
+### Execution discipline
+Set roadmaps, operating cadences, ownership, and delivery metrics.
+:::
+:::
+
+## Success Metrics
+
+::: {.grid-3}
+::: {.card}
+### Trust
+Improvement in critical data quality scores and fewer reporting disputes.
+:::
+
+::: {.card}
+### Speed
+Shorter turnaround from data request to management insight.
+:::
+
+::: {.card}
+### Impact
+Use cases moved into production and linked to commercial or risk outcomes.
+:::
+:::
+
+## Closing
+
+::: {.grid-2}
+::: {.card}
+### My proposition for Ardshinbank
+
+- Establish a credible, modern data function
+- Balance governance with delivery speed
+- Build a scalable platform for BI, analytics, and AI
+- Make data a competitive capability, not just an IT service
+:::
+
+::: {.card}
+<div class="quote">
+If selected, I would focus on one outcome above all: <span class="accent">a data function the bank can trust, use, and scale.</span>
+</div>
+
+<p class="mono muted">Karen Hovhannisyan</p>
+:::
+:::
