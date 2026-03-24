@@ -137,7 +137,7 @@
     "href": "index.html#success-requires-alignment",
     "title": "DataOps",
     "section": "Success Requires Alignment",
-    "text": "Success Requires Alignment\n\nData, Technology, Workflow, Culture must move in lockstep\nFailure occurs when:\n\nTech advances faster than culture\n\nData exists without governance"
+    "text": "Success Requires Alignment\n\nData, Technology, Workflow, Culture must move in lockstep\n\nFailure occurs when:\n\nTech advances faster than culture\n\nData exists without governance"
   },
   {
     "objectID": "index.html#target-architecture-simplified",
@@ -151,20 +151,20 @@
     "href": "index.html#key-success-factors",
     "title": "DataOps",
     "section": "Key Success Factors",
-    "text": "Key Success Factors\n\nExecutive alignment\nStrong governance\nUse-case driven execution\nContinuous iteration"
+    "text": "Key Success Factors\n\nExecutive alignment\n\nStrong governance\n\nUse-case driven execution\n\nContinuous iteration"
   },
   {
-    "objectID": "index.html#final-message",
-    "href": "index.html#final-message",
+    "objectID": "index.html#section",
+    "href": "index.html#section",
     "title": "DataOps",
-    "section": "Final Message",
-    "text": "Final Message\n\nThe biggest barrier is not data or technology — it is organizational culture\n\n\nBreak silos\nBuild trust\nDeliver value\nScale adoption"
+    "section": "",
+    "text": "The biggest barrier is not data or technology, it is organizational culture\n\n\nBreak silos\n\nBuild trust\n\nDeliver value\n\nScale adoption"
   },
   {
-    "objectID": "index.html#closing",
-    "href": "index.html#closing",
+    "objectID": "index.html#the-cdos-role-in-my-undersdanting",
+    "href": "index.html#the-cdos-role-in-my-undersdanting",
     "title": "DataOps",
-    "section": "Closing",
-    "text": "Closing\n\nData strategy must:\n\nStart with business\n\nDeliver value quickly\n\nScale through culture\n\nThe CDO role: &gt; Lead transformation, not just data"
+    "section": "The CDO’s role in my undersdanting",
+    "text": "The CDO’s role in my undersdanting\nData strategy must:\n\n\nStart with business\n\nDeliver value quickly\n\nScale through culture\n\n\n\n\\[\\downarrow\\]\nLead transformation, not just data"
   }
 ]
