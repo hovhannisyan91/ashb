@@ -15,6 +15,7 @@ format:
     transition: slide
     logo: img/favicon.png
     
+    
     include-in-header:
       - text: |
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -26,6 +27,7 @@ format:
             .pill { border-radius: 10px; }
             .circle { border-radius: 50%; }
           </style>
+    
 ---
 
 ## Objective {.smaller}
@@ -33,8 +35,6 @@ format:
 - Transform data into a **strategic banking asset**  
 - Eliminate **data silos** and enable **integrated decision-making**  
 - Build a **scalable, governed, and AI-ready organization**
-
-
 
 ## The Core Problem: Data Silos {.smaller}
 
@@ -55,19 +55,23 @@ format:
 ## Data Silos in Banking {.smaller}
 
 
-![]({{< meta image_path >}}/data_silo.png)
+![.]({{< meta image_path >}}/data_silo.png)
 
 
-## Data Silo management
+## Data Silo Management
 
-![]({{< meta image_path >}}/data_silo_m)
+![.]({{< meta image_path >}}/data_silo_m)
 
 ## Why Silos Persist {.smaller}
+
+::: {.incremental}
 
 - Organizational structure (departmental ownership)  
 - Lack of governance and ownership  
 - Technology fragmentation  
 - **Cultural resistance to sharing data** 
+
+:::
 
 
 ## Cultural {.smaller}
@@ -87,10 +91,10 @@ $$\downarrow$$
 
 ::: {.columns}
 ::: {.column}
-Experience-driven  
+*Experience-driven*
 :::
 ::: {.column}
-Not data-driven 
+*Not data-driven* 
 :::
 :::
 <!-- end columns -->
@@ -123,42 +127,21 @@ $$\downarrow$$
 
 ## Change Agent Model {.smaller}
 
-
-![]({{< meta image_path >}}/change_agent_mode.png)
-
-
-## From Silos to Integrated Bank {.smaller}
-<!-- todo -->
-```{mermaid}
-flowchart LR
-    A[Siloed Systems] --> B[Integrated Data Platform]
-    B --> C[Trusted Data]
-    C --> D[Analytics & AI]
-    D --> E[Business Value]
-```
-
-<!-- 
-IMAGE SUGGESTION:
-Before/After transformation diagram:
-Left: fragmented systems
-Right: unified data platform
--->
-
----
+![.]({{< meta image_path >}}/change_agent_mode.png)
 
 ## Data Strategy Model {.smaller}
 
 - **Combine:**
   - **Execution Steps (6-step framework)**  
   - **Foundational Pillars (4 pillars)**  
-- **Goal:**
-  > Move from **strategy → execution → culture adoption**
+
+>Move from **strategy → execution → culture adoption**
 
 
 ## Integrated Framework {.smaller}
 
 ```{mermaid}
-flowchart TB
+flowchart LR
 
     subgraph Steps
         A[Listen]
