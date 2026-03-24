@@ -291,12 +291,11 @@ Maturity curve:
 Awareness → Adoption → Optimization
 -->
 
----
+
 
 ## Success Requires Alignment {.smaller}
 
 - Data, Technology, Workflow, Culture must move **in lockstep**  
-
 - Failure occurs when:
   - Tech advances faster than culture  
   - Data exists without governance  
@@ -324,35 +323,37 @@ Include CRM, Core Banking, External Data → DW/Lakehouse → AI layer
 ## Key Success Factors {.smaller}
 
 - Executive alignment  
-
 - Strong governance  
-
 - Use-case driven execution  
-
 - Continuous iteration  
 
----
 
-## Final Message {.smaller}
 
-> The biggest barrier is not data or technology — it is **organizational culture**
+##  {.smaller}
+
+> The biggest barrier is not data or technology, it is **organizational culture**
 
 - Break silos  
-
 - Build trust  
-
 - Deliver value  
-
 - Scale adoption  
 
 ---
 
-## Closing {.smaller}
+## The CDO's role in my undersdanting {.smaller}
 
-- Data strategy must:
+**Data strategy must:**
+
+::: {.incremental}
+
   - Start with business  
   - Deliver value quickly  
   - Scale through culture  
 
-- The CDO role:
-  > **Lead transformation, not just data**
+:::
+
+. . .
+
+$$\downarrow$$
+
+**Lead transformation, not just data**
