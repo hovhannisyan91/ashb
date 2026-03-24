@@ -144,7 +144,7 @@
     "href": "index.html#target-architecture-simplified",
     "title": "DataOps",
     "section": "Target Architecture (Simplified)",
-    "text": "Target Architecture (Simplified)\n\n\n\n\n\nflowchart TB\n    A[Data Sources] --&gt; B[Data Platform]\n    B --&gt; C[Governance Layer]\n    C --&gt; D[Analytics & AI]\n    D --&gt; E[Business Decisions]"
+    "text": "Target Architecture (Simplified)"
   },
   {
     "objectID": "index.html#key-success-factors",
