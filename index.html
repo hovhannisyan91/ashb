@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+<link href="./img/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/tabby.min.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -128,6 +129,7 @@
   <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
   <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/mermaid-theme.css">
   <style>
     .icon-xxl { font-size: 84px; }
     .icon-xl  { font-size: 64px; }
@@ -272,48 +274,14 @@ Karen Hovhannisyan
 </section>
 <section id="integrated-framework" class="slide level2 smaller">
 <h2>Integrated Framework</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
 
-    subgraph Steps
-        A[Listen]
-        B[Assess]
-        C[Apply]
-        D[Test]
-        E[Execute]
-        F[Scale]
-    end
-
-    subgraph Pillars
-        P1[Data]
-        P2[Technology]
-        P3[Workflow]
-        P4[Culture]
-    end
-
-    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F
-
-    P1 --- A
-    P2 --- C
-    P3 --- E
-    P4 --- F
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
 <!-- 
 IMAGE SUGGESTION:
 Use matrix or layered diagram:
 Horizontal = Steps (execution)
 Vertical = Pillars (capabilities)
 -->
-</section>
+<img data-src="img//pilars.jpg" class="r-stretch"></section>
 <section id="listen-data" class="slide level2 smaller">
 <h2>Listen Data</h2>
 <ul>
@@ -455,20 +423,20 @@ Vertical = Pillars (capabilities)
 </ul></li>
 </ul>
 </section>
-<section id="target-architecture-simplified" class="slide level2 smaller">
-<h2>Target Architecture (Simplified)</h2>
+<section id="target-architecture" class="slide level2 smaller">
+<h2>Target Architecture</h2>
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart TB
+<pre class="mermaid mermaid-js">flowchart LR
 
 %% =======================
 %% GLOBAL STYLES
 %% =======================
 classDef defaultStyle fill:#C8D2E0,stroke:#3B6EAD,stroke-width:2px,color:#000;
-classDef highlightStyle fill:#AFC4E8,stroke:#3B6EAD,stroke-width:2px,color:#000;
+classDef highlightStyle fill:#C8D2E0,stroke:#3B6EAD,stroke-width:2px,color:#000;
 
 %% =======================
 %% DATA SOURCES
@@ -501,7 +469,7 @@ subgraph L3[Governance Layer]
 end
 
 %% =======================
-%% ANALYTICS &amp; AI (BRIGHTER BLUE)
+%% ANALYTICS &amp; AI
 %% =======================
 subgraph L4[Analytics &amp; AI]
     direction LR
@@ -520,10 +488,19 @@ subgraph L5[Business Decisions]
 end
 
 %% =======================
-%% APPLY STYLES
+%% APPLY NODE STYLES
 %% =======================
 class CRM,CORE,EXT,INGEST,LAKE,DWH,GOV,QUALITY,META,DECISION,OPS defaultStyle;
-class BI,DS,AI highlightStyle;
+class BI,DS,AI defaultStyle;
+
+%% =======================
+%% SUBGRAPH BACKGROUND (NO BORDERS)
+%% =======================
+style L1 fill:#EAF1F8,stroke-width:0px
+style L2 fill:#EAF1F8,stroke-width:0px
+style L3 fill:#EAF1F8,stroke-width:0px
+style L4 fill:#EAF1F8,stroke-width:0px
+style L5 fill:#EAF1F8,stroke-width:0px
 
 %% =======================
 %% FLOW
@@ -552,11 +529,6 @@ DECISION --&gt; OPS
 </div>
 </div>
 </div>
-<!-- 
-IMAGE SUGGESTION:
-Enterprise architecture diagram:
-Include CRM, Core Banking, External Data → DW/Lakehouse → AI layer
--->
 </section>
 <section id="key-success-factors" class="slide level2 smaller">
 <h2>Key Success Factors</h2>
@@ -598,7 +570,9 @@ Include CRM, Core Banking, External Data → DW/Lakehouse → AI layer
 </ul>
 </div>
 <div class="fragment">
+<blockquote>
 <p><em>Lead transformation, not just data</em></p>
+</blockquote>
 
 
 </div>

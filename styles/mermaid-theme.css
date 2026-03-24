@@ -1,0 +1,54 @@
+/* --- MERMAID GLOBAL THEME --- */
+
+.mermaid {
+    font-family: "Inter", sans-serif;
+}
+
+/* Nodes */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon {
+    fill: #B7C2D1 !important;
+    stroke: #3B6EAD !important;
+    stroke-width: 2px !important;
+}
+
+/* Text */
+.mermaid .node text {
+    fill: #000 !important;
+    font-weight: 600;
+}
+
+/* Edges */
+.mermaid .edgePath path {
+    stroke: #3B6EAD !important;
+    stroke-width: 2px !important;
+}
+
+/* Subgraphs */
+.mermaid .cluster rect {
+    fill: #D6E0EA !important;
+    stroke: #3B6EAD !important;
+    stroke-width: 2px !important;
+}
+
+/* Arrowheads */
+.mermaid marker path {
+    fill: #3B6EAD !important;
+}
+
+
+/* --- OPTIONAL LAYERS --- */
+
+.mermaid .layer-light rect {
+    fill: #E3EAF2 !important;
+}
+
+.mermaid .layer-main rect {
+    fill: #B7C2D1 !important;
+}
+
+.mermaid .layer-strong rect {
+    fill: #8FA8C3 !important;
+}
