@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Data Vision"
+  favicon: img/favicon.png
 
 execute:
   freeze: auto
