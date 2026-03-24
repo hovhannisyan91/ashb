@@ -575,9 +575,79 @@ DECISION --&gt; OPS
 <blockquote>
 <p><em>Lead transformation, not just data</em></p>
 </blockquote>
-
-
 </div>
+</section>
+<section id="team" class="slide level2">
+<h2>Team</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {
+  'primaryColor': '#C8D2E0',
+  'primaryBorderColor': '#3B6EAD',
+  'primaryTextColor': '#000000',
+  'lineColor': '#3B6EAD',
+  'clusterBkg': '#EAF1F8',
+  'clusterBorder': '#EAF1F8',
+  'clusterLabelColor': '#000000'
+}}}%%
+
+flowchart TB
+
+%% =======================
+%% GLOBAL STYLES
+%% =======================
+classDef defaultStyle fill:#C8D2E0,stroke:#3B6EAD,stroke-width:2px,color:#000;
+
+%% =======================
+%% TOP LEVEL
+%% =======================
+CDO[Chief Data Officer]
+
+%% =======================
+%% TEAM STRUCTURE
+%% =======================
+subgraph TEAM[Data Organization]
+    direction LR
+
+    AE[Analytics Engineers]
+    DE[Data Engineers]
+    DA[Data Analysts]
+    ML[ML Engineers]
+    OPS[DevOps / MLOps]
+    PM[Project Manager]
+
+end
+
+%% =======================
+%% APPLY STYLES
+%% =======================
+class CDO,AE,DE,DA,ML,OPS,PM defaultStyle;
+
+%% =======================
+%% REMOVE SUBGRAPH BORDERS
+%% =======================
+style TEAM stroke-width:0px
+
+%% =======================
+%% STRUCTURE
+%% =======================
+CDO --&gt; AE
+CDO --&gt; DE
+CDO --&gt; DA
+CDO --&gt; ML
+CDO --&gt; OPS
+CDO --&gt; PM
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+
+
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

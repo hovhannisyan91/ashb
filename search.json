@@ -159,5 +159,12 @@
     "title": "DataOps",
     "section": "The CDO’s role in my undersdanting",
     "text": "The CDO’s role in my undersdanting\nData strategy must:\n\n\nStart with business\n\nDeliver value quickly\n\nScale through culture\n\n\n\n\nLead transformation, not just data"
+  },
+  {
+    "objectID": "index.html#team",
+    "href": "index.html#team",
+    "title": "DataOps",
+    "section": "Team",
+    "text": "Team\n\n\n\n\n\n%%{init: {'theme': 'base', 'themeVariables': {\n  'primaryColor': '#C8D2E0',\n  'primaryBorderColor': '#3B6EAD',\n  'primaryTextColor': '#000000',\n  'lineColor': '#3B6EAD',\n  'clusterBkg': '#EAF1F8',\n  'clusterBorder': '#EAF1F8',\n  'clusterLabelColor': '#000000'\n}}}%%\n\nflowchart TB\n\n%% =======================\n%% GLOBAL STYLES\n%% =======================\nclassDef defaultStyle fill:#C8D2E0,stroke:#3B6EAD,stroke-width:2px,color:#000;\n\n%% =======================\n%% TOP LEVEL\n%% =======================\nCDO[Chief Data Officer]\n\n%% =======================\n%% TEAM STRUCTURE\n%% =======================\nsubgraph TEAM[Data Organization]\n    direction LR\n\n    AE[Analytics Engineers]\n    DE[Data Engineers]\n    DA[Data Analysts]\n    ML[ML Engineers]\n    OPS[DevOps / MLOps]\n    PM[Project Manager]\n\nend\n\n%% =======================\n%% APPLY STYLES\n%% =======================\nclass CDO,AE,DE,DA,ML,OPS,PM defaultStyle;\n\n%% =======================\n%% REMOVE SUBGRAPH BORDERS\n%% =======================\nstyle TEAM stroke-width:0px\n\n%% =======================\n%% STRUCTURE\n%% =======================\nCDO --&gt; AE\nCDO --&gt; DE\nCDO --&gt; DA\nCDO --&gt; ML\nCDO --&gt; OPS\nCDO --&gt; PM"
   }
 ]
