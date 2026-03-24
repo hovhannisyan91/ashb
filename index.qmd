@@ -1,8 +1,9 @@
 ---
-title: "Data Vision"
-subtitle: "Value Driven Proposal"
+title: "DataOps"
+# subtitle: "My Visuan"
 author: "Karen Hovhannisyan"
 date: last-modified
+image_path: "img/"
 format:
   revealjs: 
     touch: true
@@ -12,7 +13,8 @@ format:
     preview-links: auto
     width: 1500
     transition: slide
-    logo: "img/favicon.png"
+    logo: img/favicon.png
+    
     include-in-header:
       - text: |
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -26,272 +28,348 @@ format:
           </style>
 ---
 
-
-
 ## Objective {.smaller}
 
-Establish **data as a strategic banking asset** by:
+- Transform data into a **strategic banking asset**  
+- Eliminate **data silos** and enable **integrated decision-making**  
+- Build a **scalable, governed, and AI-ready organization**
 
-  
-- Ensuring regulatory compliance  
-- Improving operational efficiency  
-- Enabling trusted decision-making  
-- Accelerating AI-driven innovation across the bank  
 
-## My Vision {.smaller}
 
-Build a **trusted, governed, scalable, and business-driven data organization** that connects:
+## The Core Problem: Data Silos {.smaller}
 
-  
-- Data Governance  
-- Enterprise Data Platform  
-- Analytics & Data Science  
+- **Fragmented systems across:**
+  - Core banking  
+  - CRM  
+  - Risk  
+  - Marketing  
+  - Other Sources
+
+- **Consequences:**
+  - Inconsistent KPIs  
+  - Slow decision-making  
+  - Poor customer experience  
+  - Limited AI capability 
+  - Missing Single Source of Truth 
+
+## Data Silos in Banking {.smaller}
+
+
+![]({{< meta image_path >}}/data_silo.png)
+
+
+## Data Silo management
+
+![]({{< meta image_path >}}/data_silo_m)
+
+## Why Silos Persist {.smaller}
+
+- Organizational structure (departmental ownership)  
+- Lack of governance and ownership  
+- Technology fragmentation  
+- **Cultural resistance to sharing data** 
+
+
+## Cultural {.smaller}
+
+<div style="justify-content: center; align-items: center; text-align: center;">
+
+**Data exists**, but is not **trusted or shared**
+
+</div>
+
+$$\downarrow$$
+
 
 . . .
 
-**one operating model for the bank**
+<div style="justify-content: center; align-items: center; text-align: center;">
 
----
-
-## Banking is Different {.smaller}
-
-Compared with other industries, banking data must support:
-
-::: {.incremental}
-
-  
-- Regulatory compliance  
-- Data lineage and auditability  
-- Confidentiality and controlled access  
-- Risk transparency  
-- Near real-time operational visibility  
-- Consistent KPI definitions  
-
+::: {.columns}
+::: {.column}
+Experience-driven  
 :::
+::: {.column}
+Not data-driven 
+:::
+:::
+<!-- end columns -->
+    
+</div> 
+
+$$\downarrow$$
+
+. . .
+
+<div style="justify-content: center; align-items: center; text-align: center;">
+
+**Teams optimize locally, not globally**
+
+</div>
+
+## The Role of the CDO {.smaller}
+
+**Bridge:**
+
+  - Business  
+  - Technology  
+  - Governance  
+
+. . . 
+
+**Shift organization from:** *Siloed thinking* $\rightarrow$  *Integrated, data-driven culture*
+  
+
+
+## Change Agent Model {.smaller}
+
+
+![]({{< meta image_path >}}/change_agent_mode.png)
+
+<!-- 
+IMAGE SUGGESTION:
+Use transformation diagram:
+Strategy at center → people/process/tech → culture change
+-->
 
 ---
 
-##  High-Level Architecture {.smaller}
+## From Silos to Integrated Bank {.smaller}
 
 ```{mermaid}
 flowchart LR
-
-A[Data Sources] --> B[Data Platform]
-B --> C[Data Consumption]
-
-D[Data Governance Layer] --- A
-D --- B
-D --- C
-
-E[API / Services Layer] --- A
-E --- B
-E --- C
+    A[Siloed Systems] --> B[Integrated Data Platform]
+    B --> C[Trusted Data]
+    C --> D[Analytics & AI]
+    D --> E[Business Value]
 ```
 
-
-
-## Block 1 | Data Sources & Core Systems {.smaller}
-
-```{mermaid}
-flowchart LR
-
-A1[Core Banking Systems] --> B[Ingestion Layer]
-A2[CRM Systems] --> B
-A3[Payments Systems] --> B
-A4[Digital Channels] --> B
-A5[External Data Sources] --> B
-A6[Streaming Data] --> B
-```
-
-## Components {.smaller}
-
-  
-- Core Banking (accounts, transactions)  
-- CRM & Customer Data  
-- Payments & Cards Systems  
-- Mobile / Web Applications  
-- External APIs (credit bureau, fintechs)  
-- Event Streams (real-time transactions)  
+<!-- 
+IMAGE SUGGESTION:
+Before/After transformation diagram:
+Left: fragmented systems
+Right: unified data platform
+-->
 
 ---
 
-## Block 2 | Data Platform (Lakehouse) {.smaller}
+## Data Strategy Model {.smaller}
 
-```{mermaid}
-flowchart LR
+- **Combine:**
+  - **Execution Steps (6-step framework)**  
+  - **Foundational Pillars (4 pillars)**  
 
-B1[Ingestion Layer] --> B2[Raw Data Lake]
-B2 --> B3[Processing Layer]
-B3 --> B4[Data Warehouse]
-B4 --> B5[Data Marts / Feature Store]
-```
+- **Goal:**
+  > Move from **strategy → execution → culture adoption**
 
-## Layers {.smaller}
 
-### Ingestion {.smaller}
-
-- Batch ETL pipelines  
-- Streaming ingestion (Kafka)  
-
-### Raw Layer {.smaller}
-
-  
-- Unstructured & semi-structured data  
-- Immutable storage  
-
-### 3. Processing Layer {.smaller}
-
-- Data transformations  
-- Standardization & cleansing  
-
-### 4. Data Warehouse {.smaller}
-
-  
-- Structured, curated datasets  
-- Business-ready data  
-
-### 5. Serving Layer {.smaller}
-
-  
-- Data marts  
-- Feature stores for ML  
-- Data Analytics
-
----
-
-## Block 3 | Data Governance Layer {.smaller}
-
+## Integrated Framework {.smaller}
 
 ```{mermaid}
 flowchart TB
 
-G1[Data Quality]
-G2[Data Lineage]
-G3[Metadata Management]
-G4[Master Data Management]
-G5[Security & Access Control]
-G6[Regulatory Compliance]
-G7[Audit & Monitoring]
+    subgraph Steps
+        A[Listen]
+        B[Assess]
+        C[Apply]
+        D[Test]
+        E[Execute]
+        F[Scale]
+    end
+
+    subgraph Pillars
+        P1[Data]
+        P2[Technology]
+        P3[Workflow]
+        P4[Culture]
+    end
+
+    A --> B --> C --> D --> E --> F
+
+    P1 --- A
+    P2 --- C
+    P3 --- E
+    P4 --- F
 ```
 
-## Capabilities {.smaller}
-
-  
-- Data validation and reconciliation  
-- End-to-end lineage tracking  
-- Centralized metadata catalog  
-- Golden customer/product records (MDM)  
-- Role-based access control  
-- Compliance (GDPR, Basel, etc.)  
-- Full auditability  
+<!-- 
+IMAGE SUGGESTION:
+Use matrix or layered diagram:
+Horizontal = Steps (execution)
+Vertical = Pillars (capabilities)
+-->
 
 ---
 
-# Analytics, Data Science & AI
+## Listen + Data {.smaller}
 
-## Block 4 | Analytics, Data Science & AI {.smaller}
+- Align with business objectives:
+  - Revenue  
+  - Risk  
+  - Efficiency  
 
-```{mermaid}
-flowchart LR
-
-C1[BI & Reporting] --> C5[Decision Layer]
-C2[Advanced Analytics] --> C5
-C3[Data Science Models] --> C5
-C4[AI Systems] --> C5
-```
-
-## Layers {.smaller}
-
-### 1. BI & Reporting {.smaller}
-
-  
-- Dashboards (Tableau, Power BI)  
-
-- Regulatory reporting  
-
-### 2. Advanced Analytics {.smaller}
-
-  
-- SQL-based analytics  
-
-- Python-based analysis  
-
-### 3. Data Science {.smaller}
-
-  
-- Churn prediction  
-
-- Fraud detection  
-
-- Credit risk models  
-
-### 4. AI Layer {.smaller}
-
-  
-- Recommendation systems  
-
-- LLM-based assistants  
-
-### 5. Decision Layer {.smaller}
-
-  
-- Campaign management  
-
-- Automation systems  
-
-- API-driven decisioning  
+- Identify **critical data domains**:
+  - Customer  
+  - Transactions  
+  - Risk  
 
 ---
 
-# 6. API & Services Layer {.smaller}
+## Assess + Technology {.smaller}
 
-```{mermaid}
-flowchart LR
+- Evaluate:
+  - Current architecture  
+  - Data pipelines  
+  - Integration gaps  
 
-S1[API Gateway] --> S2[Microservices]
-S2 --> S3[External Consumers]
-```
-
-## Components {.smaller}
-
-  
-- Open Banking APIs  
-- Internal data services  
-- Microservices architecture  
-- Fintech integrations  
+- Identify:
+  - Legacy constraints  
+  - Scalability limitations  
 
 ---
 
-# End-to-End Flow {.smaller}
+## Apply + Workflow {.smaller}
+
+- Embed data into:
+  - Credit decisioning  
+  - Customer journeys  
+  - Marketing campaigns  
+
+- Move from:
+  - Reporting  
+  →  
+  - Operational intelligence  
+
+---
+
+## Test + Governance {.smaller}
+
+- Ensure:
+  - Data quality  
+  - Security  
+  - Compliance  
+
+- Define:
+  - Ownership  
+  - Policies  
+  - Controls  
+
+---
+
+## Execute + Value Delivery {.smaller}
+
+- Build MVPs:
+  - Churn prediction  
+  - Campaign targeting  
+  - Risk scoring  
+
+- Deliver:
+  - Fast, measurable impact  
+
+---
+
+## Scale + Culture {.smaller}
+
+- Expand successful use cases  
+
+- Enable:
+  - Data literacy  
+  - Self-service analytics  
+
+- Create:
+  - Organization-wide adoption  
+
+---
+
+## The Four Pillars (Foundation) {.smaller}
+
+- Data → Trusted and high-quality  
+
+- Technology → Scalable and integrated  
+
+- Workflow → Embedded into operations  
+
+- Culture → Data-driven mindset  
+
+---
+
+## Cultural Transformation Journey {.smaller}
 
 ```{mermaid}
 flowchart LR
-
-A[Data Sources] --> B[Ingestion]
-B --> C[Data Lake]
-C --> D[Processing]
-D --> E[Data Warehouse]
-E --> F[Data Marts / Feature Store]
-F --> G[Analytics / AI]
-G --> H[Decision Systems]
-
-I[Governance Layer] --- A
-I --- B
-I --- C
-I --- D
-I --- E
-I --- F
-I --- G
-I --- H
-
-J[API / Services Layer] --- A
-J --- B
-J --- C
-J --- D
-J --- E
-J --- F
-J --- G
-J --- H
+    A[Data Awareness] --> B[Trust in Data]
+    B --> C[Adoption]
+    C --> D[Data-Driven Decisions]
 ```
 
+<!-- 
+IMAGE SUGGESTION:
+Maturity curve:
+Awareness → Adoption → Optimization
+-->
 
+---
+
+## Success Requires Alignment {.smaller}
+
+- Data, Technology, Workflow, Culture must move **in lockstep**  
+
+- Failure occurs when:
+  - Tech advances faster than culture  
+  - Data exists without governance  
+
+---
+
+## Target Architecture (Simplified) {.smaller}
+
+```{mermaid}
+flowchart TB
+    A[Data Sources] --> B[Data Platform]
+    B --> C[Governance Layer]
+    C --> D[Analytics & AI]
+    D --> E[Business Decisions]
+```
+
+<!-- 
+IMAGE SUGGESTION:
+Enterprise architecture diagram:
+Include CRM, Core Banking, External Data → DW/Lakehouse → AI layer
+-->
+
+---
+
+## Key Success Factors {.smaller}
+
+- Executive alignment  
+
+- Strong governance  
+
+- Use-case driven execution  
+
+- Continuous iteration  
+
+---
+
+## Final Message {.smaller}
+
+> The biggest barrier is not data or technology — it is **organizational culture**
+
+- Break silos  
+
+- Build trust  
+
+- Deliver value  
+
+- Scale adoption  
+
+---
+
+## Closing {.smaller}
+
+- Data strategy must:
+  - Start with business  
+  - Deliver value quickly  
+  - Scale through culture  
+
+- The CDO role:
+  > **Lead transformation, not just data**
