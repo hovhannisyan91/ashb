@@ -120,7 +120,7 @@ $$\downarrow$$
 
 . . . 
 
-**Shift organization from:** *Siloed thinking* $\rightarrow$  *Integrated, data-driven culture*
+Shift organization from *Siloed thinking* $\rightarrow$  *Integrated, data-driven culture*
   
 
 
@@ -167,12 +167,12 @@ Vertical = Pillars (capabilities)
 
 ## Assess + Technology {.smaller}
 
-- Evaluate:
+- **Evaluate:**
   - Current architecture  
   - Data pipelines  
   - Integration gaps  
 
-- Identify:
+- **Identify:**
   - Legacy constraints  
   - Scalability limitations  
 
@@ -180,7 +180,7 @@ Vertical = Pillars (capabilities)
 
 ## Apply + Workflow {.smaller}
 
-- Embed data into:
+- **Embed data into:**
   - Credit decisioning  
   - Customer journeys  
   - Marketing campaigns  
@@ -210,19 +210,17 @@ Vertical = Pillars (capabilities)
   - Campaign targeting  
   - Risk scoring
   - Automations  
-- **Deliver:**
-  - Fast, measurable impact  
+- **Delivery:** Fast, measurable impact  
 
 ---
 
 ## Scale + Culture {.smaller}
 
-- Expand successful use cases  
-- Enable:
+- Expanding successful use cases  
+- **Enable:**
   - Data literacy  
   - Self-service analytics  
-- Create:
-  - Organization-wide adoption  
+- **Create:** Organization-wide adoption  
 
 
 ## The Four Pillars (Foundation) {.smaller}
@@ -239,8 +237,6 @@ Vertical = Pillars (capabilities)
 ![]({{< meta image_path >}}ctj.jpg)
 
 
-
-
 ## Success Requires Alignment {.smaller}
 
 - Data, Technology, Workflow, Culture must move **in lockstep**  
@@ -248,19 +244,17 @@ Vertical = Pillars (capabilities)
   - Tech advances faster than culture  
   - Data exists without governance  
 
-
+qu
 
 ## Target Architecture {.smaller}
 
 ```{mermaid}
-
 flowchart LR
 
 %% =======================
 %% GLOBAL STYLES
 %% =======================
 classDef defaultStyle fill:#C8D2E0,stroke:#3B6EAD,stroke-width:2px,color:#000;
-classDef highlightStyle fill:#AFC4E8,stroke:#3B6EAD,stroke-width:2px,color:#000;
 
 %% =======================
 %% DATA SOURCES
@@ -314,17 +308,16 @@ end
 %% =======================
 %% APPLY NODE STYLES
 %% =======================
-class CRM,CORE,EXT,INGEST,LAKE,DWH,GOV,QUALITY,META,DECISION,OPS defaultStyle;
-class BI,DS,AI highlightStyle;
+class CRM,CORE,EXT,INGEST,LAKE,DWH,GOV,QUALITY,META,BI,DS,AI,DECISION,OPS defaultStyle;
 
 %% =======================
-%% SUBGRAPH BACKGROUND (NO BORDERS)
+%% SUBGRAPH STYLES (FORCE BLACK TEXT)
 %% =======================
-style L1 fill:#EAF1F8,stroke-width:0px
-style L2 fill:#EAF1F8,stroke-width:0px
-style L3 fill:#EAF1F8,stroke-width:0px
-style L4 fill:#EAF1F8,stroke-width:0px
-style L5 fill:#EAF1F8,stroke-width:0px
+style L1 fill:#EAF1F8,stroke-width:0px,color:#000
+style L2 fill:#EAF1F8,stroke-width:0px,color:#000
+style L3 fill:#EAF1F8,stroke-width:0px,color:#000
+style L4 fill:#EAF1F8,stroke-width:0px,color:#000
+style L5 fill:#EAF1F8,stroke-width:0px,color:#000
 
 %% =======================
 %% FLOW
@@ -347,12 +340,7 @@ DS --> AI
 AI --> DECISION
 BI --> DECISION
 DECISION --> OPS
-
-
 ```
-
----
-
 ## Key Success Factors {.smaller}
 
 - Executive alignment  
@@ -373,7 +361,7 @@ DECISION --> OPS
 
 ---
 
-## The CDO's role in my undersdanting {.smaller}
+## The CDO's role in my undersdanting... {.smaller}
 
 **Data strategy must:**
 
@@ -431,14 +419,14 @@ subgraph TEAM[Data Organization]
 end
 
 %% =======================
-%% APPLY STYLES
+%% APPLY NODE STYLES
 %% =======================
 class CDO,AE,DE,DA,ML,OPS,PM defaultStyle;
 
 %% =======================
-%% REMOVE SUBGRAPH BORDERS
+%% FORCE SUBGRAPH STYLE (IMPORTANT)
 %% =======================
-style TEAM stroke-width:0px
+style TEAM fill:#EAF1F8,stroke-width:0px,color:#000
 
 %% =======================
 %% STRUCTURE
