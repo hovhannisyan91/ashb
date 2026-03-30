@@ -244,7 +244,7 @@ Vertical = Pillars (capabilities)
   - Tech advances faster than culture  
   - Data exists without governance  
 
-qu
+
 
 ## Target Architecture {.smaller}
 
